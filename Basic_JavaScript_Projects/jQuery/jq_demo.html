@@ -4,10 +4,13 @@
         <meta charset="utf-8">
         <title>jQuery Demo</title>
 
+        <!-- This links jQuery -->
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     </head>
     <script>
+        // This targets the whole webpage when it loads
         $(document).ready(function() {
+            // This adds HTML in jQuery
             $("html").append(
                 "<body>\
                     <div id='container'>\
@@ -20,7 +23,9 @@
                     </div>\
                 </body>"
             );
+            // This makes paragraph 2 red
             $("#2").css({"color":"red"});
+            // This hides the header when you click on paragraph 3
             $("#3").click(function() {
                 $("h1").hide();
             })
