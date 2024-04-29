@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery Testing</title>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <script>
+        $(document).ready(function(){
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <p id='1'>Hello 1</p>\
+                        <p id='2'>Hello 2</p>"
+            ); 
+            $("p").one("click", firstClick);
+
+            function firstClick() {
+                console.log("You just clicked this for the first time!");
+                $("p").click(function() { console.log("You have clicked this before!"); });
+            }
+        });
+    </script>
+</html>
