@@ -1,0 +1,69 @@
+/* Dark mode */
+body {
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+/* Styling the input boxes */
+input[type="text"] {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    border-radius: 6px;
+    width: calc(100% - 24px);
+    padding: 6px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+input[type="text"]:hover {
+    border: 3px solid #0064c9;
+}
+
+input[type="submit"] {
+    background-color: rgb(141, 141, 141);
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+/* Making text area look like other boxes */
+.textarea {
+    width: calc(100% - 24px);
+    height: 125px;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(47, 47, 47);
+    /* resize: none; */
+    overflow-wrap: break-word; /* Ensure text wraps onto next line */
+}
+
+.textarea:hover {
+    border: 3px solid #0064c9;
+}
+
+/* Giving the form a container so I can move it and make it look nice */
+.container {
+    background-color: rgb(0, 113, 0);
+    border-radius: 8px;
+    padding: 27px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Form inside the container */
+form {
+    background-color: rgb(88, 88, 88);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
