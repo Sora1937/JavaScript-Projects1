@@ -3,8 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <script src="JS/defer_1.js" defer></script>
+
+        <style>
+            html {
+                background-color: black;
+            }
+            body {
+                opacity: 1;
+                transition: 1s opacity;
+            }
+
+            body.fade-out {
+                opacity: 0;
+                transition: none;
+            }
+        </style>
     </head>
     <body>
+        <script>
+            document.body.classList.add('fade-out');
+
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+        </script>
         
         <script src="JS/async.js" async></script>
         <p id="p1">Hello World</p>
